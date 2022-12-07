@@ -139,14 +139,16 @@ body {
     font-size: 20px;
 }
 
-
+.tv-shows {
+    display: none;
+}
 @media scren and (min-device-width: 768px) {
     .tab-bar .tab-btn button {
         padding: 20px;
     }
 
     .tv-shows {
-        display: none;
+        display: block;
     }
 
     .search input {
