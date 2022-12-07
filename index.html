@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Tech Interview Prep</title>
 </head>
 <body>
     <div class="container">
         <div class="search">
+            <ion-icon name="search-outline"></ion-icon>
             <input type="text" class="search-bar" placeholder="Search for a show, movie, genre, etc">
+            <ion-icon name="mic-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
         </div>
 
         <div class="results">
@@ -19,13 +25,15 @@
                 <div class="shows-list">
                     <div class="show">
                         <div class="show-pic">
-                            <img src="" alt="" width="100px" height="90px">
+                            <img src="https://via.placeholder.com/100" alt="" width="100px" height="90px">
                         </div>
                         <div class="show-title">
                             <span>Dark</span>
                         </div>
                         <div class="show-play">
-                            <button>Play</button>
+                            <button>
+                                <ion-icon name="play"></ion-icon>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -38,7 +46,7 @@
                 <div class="grid">
                     <div class="col">
                         <a href="#">
-                            <img src="" alt="" width="180px" height="300px">
+                            <img src="https://via.placeholder.com/180x300" alt="" width="180px" height="300px">
                         </a>
                     </div>
                 </div>
@@ -46,19 +54,32 @@
         </div>
         <div class="tab-bar">
             <div class="tab-btn">
-                <button>Home</button>
+                <button>
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span>Home</span>
+                </button>
             </div>
             <div class="tab-btn">
-                <button>Search</button>
+                <button>
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Search</span>
+                </button>
+
             </div>
             <div class="tab-btn">
                 <button>Coming Soon</button>
             </div>
             <div class="tab-btn">
-                <button>Downloads</button>
+                <button>
+                    <ion-icon name="download"></ion-icon>
+                    <span>Downloads</span>
+                </button>
             </div>
             <div class="tab-btn">
-                <button>More</button>
+                <button>
+                    <ion-icon name="menu"></ion-icon>
+                    <span>More</span>
+                </button>
             </div>
         </div>
     </div>

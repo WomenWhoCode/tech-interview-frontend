@@ -14,10 +14,26 @@ body {
 
 .search {
    display: flex;
+   position: relative;
 }
+
+.search ion-icon {
+    position: absolute;
+    top: 15px;
+}
+
+.search ion-icon:first-of-type {
+    left: 20px;
+}
+
+.search ion-icon:nth-of-type(2),
+.search ion-icon:nth-of-type(3){
+    right: 20px;
+}
+
 .search input {
     background: #323232;
-    padding: 12px 20px;
+    padding: 12px 20px 12px 40px;
     border: none;
     border-radius: 5px;
     color: white;
@@ -52,7 +68,6 @@ body {
     margin-bottom: 10px;
 }
 .tv-shows {
-    /*display: none;*/
     margin-left: -10px;
     margin-right: -10px;
 }
@@ -114,6 +129,16 @@ body {
 
 }
 
+.tab-bar .tab-btn button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-bar .tab-btn button ion-icon {
+    font-size: 20px;
+}
+
 
 @media scren and (min-device-width: 768px) {
     .tab-bar .tab-btn button {
@@ -121,11 +146,15 @@ body {
     }
 
     .tv-shows {
-        display: block;
+        display: none;
     }
 
     .search input {
         width: auto;
         max-width: 320px;
+    }
+
+    .popular-search {
+        display: none;
     }
 }
